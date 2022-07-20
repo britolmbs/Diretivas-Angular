@@ -16,7 +16,7 @@
 <h2 *ngIf="count > 7; else menos">O contador passou de 7 !</h2>
 
 <ng-template #menos>
-  <h2>O contador é menor que 7!</h2>
+  <h2 appMarcaTexto corDeFundo="Red" corDoTexto="black">O contador é menor que 7!</h2>
 </ng-template>
 
 <ul [ngSwitch]="count" class="list-group mx-auto">
@@ -34,7 +34,7 @@
 
 <div class="col-4 mx-auto">
 <input type="text" class="form-control" placeholder="Digite aqui" [(ngModel)]="texto">
-<h4>Saida: {{texto}}</h4>
+<h4 appMarcaTexto>Saida: {{texto}}</h4>
 
 </div>
 
