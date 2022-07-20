@@ -3,7 +3,7 @@
   <!--Diretivas de Atributos -->
 
 <div 
-[ngStyle]="{background: count < 5 ? 'red' :
+[ngStyle]="{background: count <li 5 ? 'red' :
 'green'}"
 [ngClass]="{custom: count >= 5 }"
 >
@@ -26,4 +26,11 @@
   <li class="list-group-item" *ngSwitchCase="10">É igual a 10</li>
   <li class="list-group-item" *ngSwitchDefault>Esse é o Default</li>
 </ul>
+
+<ul class="list-group mx-auto">
+<li class="list-group-item" *ngFor="let pessoa of pessoas"> O nome da pessoa é {{ pessoa.nome }} {{ pessoa.sobrenome }}
+
+</li>
+</ul>
+
   
