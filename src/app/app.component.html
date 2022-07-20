@@ -29,8 +29,13 @@
 
 <ul class="list-group mx-auto">
 <li class="list-group-item" *ngFor="let pessoa of pessoas"> O nome da pessoa é {{ pessoa.nome }} {{ pessoa.sobrenome }}
-
 </li>
 </ul>
+
+<div class="col-4 mx-auto">
+<input type="text" class="form-control" placeholder="Digite aqui" [(ngModel)]="texto">
+<h4>Saida: {{texto}}</h4>
+
+</div>
 
   
